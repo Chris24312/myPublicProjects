@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="#e0e0e0">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/tvLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S: XX:XX  E: XX:XX"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B: XX   xX"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xh XXm"
+        android:textSize="18sp"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:backgroundTint="#e6acac" />
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#c3e0af" />
+
+</LinearLayout>

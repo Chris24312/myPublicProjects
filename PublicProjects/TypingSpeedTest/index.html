@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="results-display">
+      <h1 id="results-title" style="margin: 0 0 22px 0; color: rgb(0, 0, 0)">
+        Results:
+      </h1>
+      <h2
+        id="time-h2"
+        style="margin: 10px 0 10px 0; color: rgba(0, 0, 0, 0.685)"
+      >
+        Time: 2.04 min
+      </h2>
+      <h2
+        id="wpm-h2"
+        style="margin: 10px 0 10px 0; color: rgba(0, 0, 0, 0.685)"
+      >
+        Wpm:
+      </h2>
+      <button id="close-results-button">Close</button>
+    </div>
+    <div id="dark-background"></div>
+    <div id="task-bar">
+      <div>
+        <label for="slider" id="words-slider-counter">Words(50):</label>
+        <input type="range" id="words-slider" min="10" max="250" value="50" />
+      </div>
+      <div
+        style="display: flex; align-items: center; gap: 10px; margin-left: 10px"
+      >
+        <label for="difficulty-form" style="margin-left: 20px"
+          >Difficulty:</label
+        >
+        <form id="difficulty-form">
+          <label>
+            <input type="radio" name="difficulty" value="random" checked />
+            Random
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="easy" />
+            Easy
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="medium" />
+            Medium
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="hard" />
+            Hard
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <h1 style="margin: 10px">Typing Speed Test</h1>
+      <p style="margin: 0; color: gray">
+        Press on "Regenerate Text" Button after changing the settings.
+      </p>
+      <p id="text-display-p" class="no-copy">Text will go here.</p>
+      <textarea id="text-input"></textarea>
+      <div id="buttons-container">
+        <button id="regenerate-button">Regenerate Text</button>
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+      </div>
+    </div>
+  </body>
+</html>

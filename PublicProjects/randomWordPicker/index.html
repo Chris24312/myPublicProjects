@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word Picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <h1 id="title">🎲Random Word Picker🎲</h1>
+        <div>
+            <button id="reset-button">↻</button>
+            <input id="text-input-field" type="text" placeholder="Add Words Here" autocomplete="off" maxlength="30"> 
+            <button id="add-word">+</button>
+        </div>
+        <div id="words-container">
+        </div>
+        <button id="pick-random-word-button">Pick Random Word</button>
+    </div>
+    <div id="display-container">
+        <h2 style="color: rgb(53, 53, 53); margin: 0 0 15px 0;">The Random Word is:</h2>
+        <h1 id="random-word-display" style="margin: 0;"></h1>
+        <button id="remove-current-word">Remove</button>
+        <button id="close-display-button">Close</button>
+    </div>
+    <div id="info-container">
+        <h1 style="margin: 0 0 5px 0; color: rgb(0, 0, 0);">Welcome to <br>🎲Random Word Picker🎲</h1> 
+        <h3 style="margin: 0 0 15px 0; color: rgb(59, 59, 59);">a simple tool that picks a random word from <br>a list you provide!</h3>
+        
+        <h2 style="margin: 20px 0 5px 0; color: blue;">How it works:</h2>
+        <h3 style="margin: 2px;">1. Add words into the input field. <br> 2. Click the Randomize button. <br>3. The website will pick one random word from your list. <br>4. Click a word to delete it. <br>5. Click on the Reset button to delete all the words</h3>
+        <button id="close-info-button">Close</button>
+    </div>
+    <div id="dark-background"></div>   
+</body>
+</html>

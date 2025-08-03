@@ -1,0 +1,236 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+input {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgba(170, 170, 170, 0.637);
+    border-radius: 5px;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.192);
+    transition: transform 0.1s ease;
+
+}
+
+input:hover {
+    cursor: default;
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.02);
+}
+
+#title {
+    transition: transform 0.1s ease;
+}
+
+#title:hover {
+    transform: scale(1.01);
+    cursor: default;
+}
+
+#title:active {
+    transform: scale(0.99);
+}
+
+#words-container {
+    width: 75%;
+    border: 0.5px solid rgba(170, 170, 170, 0.637);
+    border-radius: 5px;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.192);
+    margin: 10px auto;
+}
+
+#reset-button {
+    font-size: 19px;
+    width: 50px;
+    background-color: rgb(243, 122, 122);
+    border: 0.5px solid rgba(146, 0, 0, 0.384);
+    border-radius: 5px;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.192);
+    transition: transform 0.1s ease;
+}
+
+#reset-button:hover {
+    background-color: rgb(240, 104, 104);
+    transform: scale(1.05);
+}
+
+#reset-button:active {
+    background-color: rgb(233, 94, 94);
+    transform: scale(0.95);
+}
+
+#add-word {
+    font-size: 20px;
+    width: 50px;
+    background-color: rgb(122, 243, 122);
+    border: 0.5px solid rgba(29, 146, 0, 0.384);
+    border-radius: 5px;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.192);
+    transition: transform 0.1s ease;
+
+}
+
+#add-word:hover {
+    background-color: rgb(94, 233, 94);
+    transform: scale(1.05);
+}
+
+#add-word:active {
+    background-color: rgb(71, 226, 71);
+    transform: scale(0.95);
+}
+
+#pick-random-word-button {
+    font-size: 20px;
+    padding: 2px;
+    width: 250px;
+    background-color: rgb(139, 255, 245); 
+    border: 0.5px solid rgba(58, 94, 255, 0.384);
+    border-radius: 5px;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.192);
+    transition: transform 0.1s ease;
+
+}
+
+#pick-random-word-button:hover {
+    background-color: rgb(105, 255, 243);
+    transform: scale(1.02);
+}
+
+#pick-random-word-button:active {
+    background-color: rgb(58, 255, 239);
+    transform: scale(0.98);
+}
+
+#display-container {
+    display: none;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 9998;
+}
+
+#main-container {
+    display: inline;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+    width: 450px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#words-container {
+    padding: 5px;
+}
+
+#info-container {
+    display: none;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#remove-current-word {
+    background-color: rgb(252, 112, 112);
+    border-radius: 7px;
+    border: 0.5px solid rgba(146, 0, 0, 0.479);
+    color: white;
+    font-size: 20px;
+    margin: 25px 0 0 0;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.295);
+    transition: transform 0.1s ease;
+}
+
+#remove-current-word:hover {
+    background-color: rgb(250, 89, 89);
+    transform: scale(1.05);
+}
+
+#remove-current-word:active {
+    background-color: rgb(243, 67, 67);
+    transform: scale(0.95);
+}
+
+#close-display-button {
+    background-color: rgb(68, 255, 62);
+    border-radius: 7px;
+    border: 0.5px solid rgba(0, 179, 9, 0.753);
+    color: white;
+    font-size: 20px;
+    margin: 25px 0 0 0;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.295);
+    transition: transform 0.1s ease;
+}
+
+#close-display-button:hover {
+    background-color: rgb(43, 233, 18);
+    transform: scale(1.03);
+}
+
+#close-display-button:active {
+    background-color: rgb(32, 223, 7);
+    transform: scale(0.97);
+}
+
+#close-info-button {
+    background-color: rgb(255, 59, 59);
+    border-radius: 7px;
+    border: 0.5px solid rgb(168, 0, 0);
+    color: white;
+    font-size: 20px;
+    margin: 25px 0 0 0;
+    width: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.295);
+
+}
+
+#close-info-button:hover {
+    background-color: rgb(255, 20, 20);
+    transform: scale(1.03);
+}
+
+#close-info-button:active {
+    background-color: rgb(189, 0, 0);
+    transform: scale(0.97);
+}
+
+#dark-background {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 5000;
+    position: absolute;
+}
+
+.added-word {
+    margin: 5px ;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: black;
+    transition: transform 0.1s ease;
+}
+
+.added-word:hover {
+    color: red;
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.added-word:active {
+    color: rgb(156, 0, 0);
+    transform: scale(0.8);
+}

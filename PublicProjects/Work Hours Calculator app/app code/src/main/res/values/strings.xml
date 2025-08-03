@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WorkHoursCalculator</string>
+    <string name="session_time">S: %1$s  E: %2$s</string>
+    <string name="session_break_count">B: %1$d   x%2$d</string>
+</resources>
